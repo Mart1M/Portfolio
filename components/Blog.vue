@@ -53,5 +53,5 @@ axios.get('https://strapi-backend-mart1.herokuapp.com/projets').then(response =>
 //     }
     
 //   }
-}
+//}
 </script>
