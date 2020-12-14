@@ -32,7 +32,7 @@ export default {
     image: {},
     strapi: {
         entities: ['projets', ],
-        url: 'http://localhost:1337'
+        url: 'https://portfolio.mart1m.vercel.app/'
     },
 
     // Build Configuration (https://go.nuxtjs.dev/config-build)
