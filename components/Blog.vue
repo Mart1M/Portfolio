@@ -42,9 +42,15 @@ export default {
     }
   },
   async mounted () {
+    // try {
+    //   const response = await axios.get('https://strapi-backend-mart1.herokuapp.com/projets')
+    //   this.projets = response.data
+    // } catch (error) {
+    //   this.error = error;
+    // }
     try {
       const response = await axios.get('https://strapi-backend-mart1.herokuapp.com/projets')
-      this.projets = response.data
+      this.restaurants = response.data
     } catch (error) {
       this.error = error;
     }
