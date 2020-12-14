@@ -32,7 +32,7 @@ export default {
     image: {},
     strapi: {
         entities: ['projets', ],
-        url: 'https://portfolio.mart1m.vercel.app/'
+        url: 'https://strapi-backend-mart1.herokuapp.com/'
     },
 
     // Build Configuration (https://go.nuxtjs.dev/config-build)
