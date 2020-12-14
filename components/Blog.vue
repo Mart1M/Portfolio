@@ -32,28 +32,26 @@
 
 <script>
 import axios from 'axios'
+axios.get('https://strapi-backend-mart1.herokuapp.com/projets').then(response => {
+  console.log(response);
+});
 
-export default {
-  name: 'projects',
-  data(){
-    return{
-      projets: [],
-      error: null
-    }
-  },
-  async mounted () {
-    // try {
-    //   const response = await axios.get('https://strapi-backend-mart1.herokuapp.com/projets')
-    //   this.projets = response.data
-    // } catch (error) {
-    //   this.error = error;
-    // }
-    try {
-      const response = await axios.get('https://strapi-backend-mart1.herokuapp.com/projets')
-      this.projets = response.data
-    } catch (error) {
-      this.error = error;
-    }
-  }
+// export default {
+//   name: 'projects',
+//   data(){
+//     return{
+//       projets: [],
+//       error: null
+//     }
+//   },
+//   async mounted () {
+//     try {
+//       const response = await axios.get('https://strapi-backend-mart1.herokuapp.com/projets')
+//       this.projets = response.data
+//     } catch (error) {
+//       this.error = error;
+//     }
+    
+//   }
 }
 </script>
