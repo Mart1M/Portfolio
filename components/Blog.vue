@@ -15,6 +15,7 @@
                                 <div class="px-8 py-6 flex flex-col">
                                 <h3 class="text-2xl">{{ projet.Titre }}</h3>
                                 <span class="text-gray-400">{{ projet.Tag }}</span>
+                                {{projet.Image.id}}
                                 </div>
                                 <a class="border-gray-900 uppercase border-2 mt-10 flex justify-center py-4 rounded-full" :href="projet.Lien" target="_blank">View project →</a>
         </div>
