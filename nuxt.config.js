@@ -1,7 +1,7 @@
 export default {
     // Global page headers (https://go.nuxtjs.dev/config-head)
     head: {
-        title: 'Portfolio',
+        title: 'Martin Molcrette',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,6 +25,7 @@ export default {
     buildModules: [
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
+        '@nuxtjs/fontawesome',
     ],
 
     // Modules (https://go.nuxtjs.dev/config-modules)
