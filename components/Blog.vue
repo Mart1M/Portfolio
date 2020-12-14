@@ -9,8 +9,9 @@
         <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
                             <div class="px-8 py-6 flex flex-col">
                                 <div v-if="projet.Image">
+                                  {{projet.Image.url}}
                                     <nuxt-image :src="'https://strapi-backend-mart1.herokuapp.com/'+projet.Image.url" alt="" class="rounded-t-2xl" />
-                                    <img src="'https://strapi-backend-mart1.herokuapp.com/'+projet.Image.url" alt="">
+                                    <img :src="'https://strapi-backend-mart1.herokuapp.com/'+projet.Image.url" alt="">
                                 </div>
                                 <div class="px-8 py-6 flex flex-col">
                                 <h3 class="text-2xl">{{ projet.Titre }}</h3>
