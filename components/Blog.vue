@@ -6,7 +6,7 @@
     <ul v-else class="grid grid-cols-3 gap-10 mt-32">
       
       <li v-for="projet in projets" :key="projet.id">
-        
+        {{ projet.Titre }}
         <!-- <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
                             <div class="px-8 py-6 flex flex-col">
                                 <div v-if="projet.Image">
