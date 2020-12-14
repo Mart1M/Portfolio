@@ -3,7 +3,7 @@
     <div v-if="error">
       {{ error }}
     </div>
-    <!-- <ul v-else class="grid grid-cols-3 gap-10 mt-32">
+    <ul v-else class="grid grid-cols-3 gap-10 mt-32">
       
       <li v-for="projet in projets" :key="projet.id">
         <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
@@ -22,7 +22,7 @@
 
       </li>
     
-    </ul> -->
+    </ul>
     
 </div>
     
