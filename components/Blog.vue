@@ -50,7 +50,7 @@ export default {
     // }
     try {
       const response = await axios.get('https://strapi-backend-mart1.herokuapp.com/projets')
-      this.restaurants = response.data
+      this.projets = response.data
     } catch (error) {
       this.error = error;
     }
