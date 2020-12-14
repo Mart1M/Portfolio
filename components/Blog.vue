@@ -1,4 +1,4 @@
-<template>
+<template class='container mx-auto px-4 relative'>
   <div>
     <div v-if="error">{{ error }}</div>
     <ul v-else class="grid grid-cols-3 gap-10 mt-32">
