@@ -10,7 +10,7 @@
         <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
                             <div class="px-8 py-6 flex flex-col">
                                 <div v-if="projet.Image">
-                                    <nuxt-image :src="'http://localhost:1337'+projet.Image.url" alt="" class="rounded-t-2xl" />
+                                    <nuxt-image :src="'https://portfolio-mauve-nine.vercel.app/'+projet.Image.url" alt="" class="rounded-t-2xl" />
                                 </div>
                                 <div class="px-8 py-6 flex flex-col">
                                 <h3 class="text-2xl">{{ projet.Titre }}</h3>
