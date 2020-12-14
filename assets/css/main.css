@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Gramatika Black";
+    src: url("~/assets/fonts/Gramatika-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gramatika Bold";
+    src: url("~/assets/fonts/Gramatika-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gramatika Medium";
+    src: url("~/assets/fonts/Gramatika-Medium.ttf") format("truetype");
+}
+
+body {
+    background-color: #5743D8;
+    background-image: url("~/assets/Ellipse1.png");
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    body {}
+}
+
+@media (min-width: 1280px) {
+    body {
+        background-position: right -20vw top -500px;
+    }
+}
+
+.background-blur,
+.menu,
+.social-header {
+    background: rgba(87, 67, 216, 0.6);
+    backdrop-filter: blur(40px);
+}
+
+.menu {
+    font-family: 'Gramatika-Bold';
+}
+
+.hero h2 {
+    font-family: 'Gramatika-Light';
+    letter-spacing: 2.6px;
+}
+
+.main h2,
+.main h3 {
+    font-family: 'Gramatika-Black';
+}
+
+.main span {
+    font-family: "Gramatika Medium";
+}
+
+.main a {
+    font-family: "Gramatika Bold";
+    border-color: #5743D8;
+    color: #5743D8;
+}
+
+
+/* .grille div {
+    border-left: 1px rgba(255, 255, 255, 0.15) solid;
+    border-style: dotted;
+} */
+
+.background-dark {
+    background-color: #1f184e;
+}
+
+.wave {
+    margin-bottom: -10px;
+}
+
+footer {
+    background-color: #130F30;
+}
