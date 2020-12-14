@@ -10,14 +10,15 @@
         :key="projet.id"
       >
         <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
+          <img
+            v-if="projet.Image"
+            :src="'https://strapi-backend-mart1.herokuapp.com'+projet.Image[0].url"
+            class="rounded-t-2xl"
+            alt
+            srcset
+          />
           <div class="px-8 py-6 flex flex-col">
-            <img
-              v-if="projet.Image"
-              :src="'https://strapi-backend-mart1.herokuapp.com'+projet.Image[0].url"
-              class="rounded-t-2xl"
-              alt
-              srcset
-            />
+
             <div class="px-8 py-6 flex flex-col">
               <h3 class="text-2xl">{{ projet.Titre }}</h3>
               <span class="text-gray-400">{{ projet.Tag }}</span>

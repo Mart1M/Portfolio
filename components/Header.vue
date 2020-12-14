@@ -3,7 +3,7 @@
     <div class="col-start-1 col-span-2">
       <div class="background-blur rounded-full h-12 w-12 flex items-center justify-center">
         <a href="#body"><img
-            src="./assets/logo.svg"
+            src=""
             alt=""
             srcset=""
           ></a>

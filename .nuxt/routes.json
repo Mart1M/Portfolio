@@ -1,0 +1,13 @@
+[
+  {
+    "name": "_tailwind",
+    "path": "/_tailwind",
+    "component": "/Users/martinm/Development/Portfolio/node_modules/@nuxtjs/tailwindcss/lib/ui/pages/index.vue"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/martinm/Development/Portfolio/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]

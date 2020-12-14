@@ -1,21 +1,5 @@
-@font-face {
-    font-family: "Gramatika Black";
-    src: url("~/assets/fonts/Gramatika-Black.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Gramatika Bold";
-    src: url("~/assets/fonts/Gramatika-Bold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "Gramatika Medium";
-    src: url("~/assets/fonts/Gramatika-Medium.ttf") format("truetype");
-}
-
 body {
     background-color: #5743D8;
-    background-image: url("~/assets/Ellipse1.png");
     background-repeat: no-repeat;
     min-height: 100%;
 }
