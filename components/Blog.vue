@@ -1,8 +1,14 @@
-<template class='container mx-auto px-4 relative'>
-  <div>
+<template>
+  <div class='container mx-auto px-4 relative'>
     <div v-if="error">{{ error }}</div>
-    <ul v-else class="grid grid-cols-3 gap-10 mt-32">
-      <li v-for="projet in projets" :key="projet.id">
+    <ul
+      v-else
+      class="grid grid-cols-3 gap-10 mt-32"
+    >
+      <li
+        v-for="projet in projets"
+        :key="projet.id"
+      >
         <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
           <div class="px-8 py-6 flex flex-col">
             <img
@@ -32,7 +38,7 @@
 import axios from "axios";
 axios
   .get("https://strapi-backend-mart1.herokuapp.com/projets")
-  .then((response) => {
+  .then(response => {
     console.log(response);
   });
 
@@ -41,7 +47,7 @@ export default {
   data() {
     return {
       projets: [],
-      error: null,
+      error: null
     };
   },
   async mounted() {
@@ -53,6 +59,6 @@ export default {
     } catch (error) {
       this.error = error;
     }
-  },
+  }
 };
 </script>
