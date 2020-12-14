@@ -7,7 +7,7 @@
       
       <li v-for="projet in projets" :key="projet.id">
         
-        <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
+        <!-- <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
                             <div class="px-8 py-6 flex flex-col">
                                 <div v-if="projet.Image">
                                     <nuxt-image :src="'https://portfolio.mart1m.vercel.app/'+projet.Image.url" alt="" class="rounded-t-2xl" />
@@ -19,7 +19,7 @@
                                 <a class="border-gray-900 uppercase border-2 mt-10 flex justify-center py-4 rounded-full" :href="projet.Lien" target="_blank">View project →</a>
         </div>
 
-        </div>
+        </div> -->
 
       </li>
     
