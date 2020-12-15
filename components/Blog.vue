@@ -38,6 +38,12 @@
 <script>
 import axios from "axios";
 
+axios
+  .get("https://strapi-backend-mart1.herokuapp.com/projets")
+  .then(response => {
+    console.log(response);
+  });
+
 export default {
   name: "projects",
   data() {
