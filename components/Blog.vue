@@ -14,7 +14,7 @@
         <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
           <img
             v-if="projet.Image"
-            :src="'https://strapi-backend-mart1.herokuapp.com'+projet.Image[0].url"
+            :src="projet.Image[0].url"
             class="rounded-t-2xl"
             alt
             srcset
