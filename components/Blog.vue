@@ -1,5 +1,6 @@
 <template>
   <div class='container mx-auto px-4 relative'>
+    <h2 class="text-9xl flex justify-center text-white">My works.</h2>
     <div v-if="error">{{ error }}</div>
     <ul
       v-else
@@ -8,6 +9,7 @@
       <li
         v-for="projet in projets"
         :key="projet.id"
+        class="cards-project"
       >
         <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
           <img
@@ -19,12 +21,10 @@
           />
           <div class="px-8 py-6 flex flex-col">
 
-            <div class="px-8 py-6 flex flex-col">
-              <h3 class="text-2xl">{{ projet.Titre }}</h3>
-              <span class="text-gray-400">{{ projet.Tag }}</span>
-            </div>
+            <h3 class="text-2xl">{{ projet.Titre }}</h3>
+            <span class="text-gray-400">{{ projet.Tag }}</span>
             <a
-              class="border-gray-900 uppercase border-2 mt-10 flex justify-center py-4 rounded-full"
+              class="uppercase mt-10 flex justify-center py-4 rounded-full"
               :href="projet.Lien"
               target="_blank"
             >View project →</a>
@@ -37,11 +37,6 @@
 
 <script>
 import axios from "axios";
-axios
-  .get("https://strapi-backend-mart1.herokuapp.com/projets")
-  .then(response => {
-    console.log(response);
-  });
 
 export default {
   name: "projects",

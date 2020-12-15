@@ -8,7 +8,8 @@ export default {
             { hid: 'description', name: 'description', content: '' }
         ],
         link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+            { rel: '' }
         ]
     },
 
@@ -29,7 +30,13 @@ export default {
     ],
 
     // Modules (https://go.nuxtjs.dev/config-modules)
-    modules: ['@nuxtjs/strapi', '@nuxt/image'],
+    modules: ['@nuxtjs/strapi', '@nuxt/image', ['nuxt-fontawesome', {
+        component: 'fa',
+        imports: [{
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['fab']
+        }]
+    }]],
     image: {},
     strapi: {
         entities: ['projets', ],

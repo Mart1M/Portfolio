@@ -13,6 +13,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_be55acbe from 'nuxt_plugin_plugin_be55acbe' // Source: ./components/plugin.js (mode: 'all')
+import nuxt_plugin_templatesplugin4b2bbd2c_64b90796 from 'nuxt_plugin_templatesplugin4b2bbd2c_64b90796' // Source: ./templates.plugin.4b2bbd2c.js (mode: 'all')
 import nuxt_plugin_image_453efb32 from 'nuxt_plugin_image_453efb32' // Source: ./image.js (mode: 'all')
 import nuxt_plugin_cookieuniversalnuxt_5ff44fdf from 'nuxt_plugin_cookieuniversalnuxt_5ff44fdf' // Source: ./cookie-universal-nuxt.js (mode: 'all')
 import nuxt_plugin_http_f07c1d8e from 'nuxt_plugin_http_f07c1d8e' // Source: ./http.js (mode: 'all')
@@ -63,7 +64,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"Martin Molcrette","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"Martin Molcrette","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":""}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -179,6 +180,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_plugin_be55acbe === 'function') {
     await nuxt_plugin_plugin_be55acbe(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_templatesplugin4b2bbd2c_64b90796 === 'function') {
+    await nuxt_plugin_templatesplugin4b2bbd2c_64b90796(app.context, inject)
   }
 
   if (typeof nuxt_plugin_image_453efb32 === 'function') {

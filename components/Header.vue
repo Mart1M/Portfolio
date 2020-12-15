@@ -3,7 +3,7 @@
     <div class="col-start-1 col-span-2">
       <div class="background-blur rounded-full h-12 w-12 flex items-center justify-center">
         <a href="#body"><img
-            src=""
+            src="../assets/img/logo.svg"
             alt=""
             srcset=""
           ></a>
@@ -20,8 +20,12 @@
     </div>
     <div class="col-start-11 col-span-2 md:flex justify-end hidden">
       <div class="background-blur rounded-full flex space-x-6 items-center justify-center px-8">
-        <a href=""><i class="fab fa-dribbble"></i></a>
-        <a href=""><i class="fab fa-behance"></i></a>
+        <a href="">
+          <font-awesome-icon :icon="['fab', 'dribbble']" />
+        </a>
+        <a href="">
+          <font-awesome-icon :icon="['fab', 'behance']" />
+        </a>
       </div>
     </div>
   </header>

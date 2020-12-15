@@ -1,3 +1,23 @@
+@font-face {
+    font-family: "Gramatika-Black";
+    src: url("~assets/fonts/Gramatika-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gramatika-Bold";
+    src: url("~assets/fonts/Gramatika-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gramatika-Medium";
+    src: url("~assets/fonts/Gramatika-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gramatika-Light";
+    src: url("~assets/fonts/Gramatika-Light.ttf") format("truetype");
+}
+
 body {
     background-color: #5743D8;
     background-repeat: no-repeat;
@@ -21,8 +41,15 @@ body {
     backdrop-filter: blur(40px);
 }
 
-.menu {
+.menu,
+h3,
+.cards-project a {
     font-family: 'Gramatika-Bold';
+}
+
+.cards-project a {
+    border: 1px solid #5743D8;
+    color: #5743D8;
 }
 
 .hero h2 {
@@ -35,12 +62,13 @@ body {
     font-family: 'Gramatika-Black';
 }
 
-.main span {
-    font-family: "Gramatika Medium";
+.main span,
+.cards-project span {
+    font-family: "Gramatika-Medium";
 }
 
 .main a {
-    font-family: "Gramatika Bold";
+    font-family: "Gramatika-Bold";
     border-color: #5743D8;
     color: #5743D8;
 }
