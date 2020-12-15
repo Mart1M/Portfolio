@@ -20,6 +20,7 @@
 
 body {
     background-color: #5743D8;
+    background-image: url("~assets/img/Ellipse1.png");
     background-repeat: no-repeat;
     min-height: 100%;
 }
