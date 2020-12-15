@@ -20,7 +20,8 @@
         "axios": "^0.21.0",
         "core-js": "^3.6.5",
         "nuxt": "^2.14.6",
-        "nuxt-fontawesome": "^0.4.0"
+        "nuxt-fontawesome": "^0.4.0",
+        "sharp": "^0.26.3"
     },
     "devDependencies": {
         "@nuxt/image": "^0.0.4",
