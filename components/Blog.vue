@@ -2,7 +2,7 @@
 import axios from "axios";
 
 // axios
-//   .get("https://strapi-backend-mart1.herokuapp.com/projets")
+//   .get("https://strapi-298820.ew.r.appspot.com/projets")
 //   .then(response => {
 //     console.log(response);
 //   });
@@ -18,7 +18,7 @@ export default {
   async mounted() {
     try {
       const response = await axios.get(
-        "https://strapi-backend-mart1.herokuapp.com/projets"
+        "https://strapi-298820.ew.r.appspot.com/projets"
       );
       this.projets = response.data;
     } catch (error) {
