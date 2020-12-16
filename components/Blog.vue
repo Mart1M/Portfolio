@@ -39,12 +39,12 @@ export default {
     <div v-if="error">{{ error }}</div>
     <ul
       v-else
-      class="grid grid-cols-3 gap-8 mt-32"
+      class="grid grid-cols-12 gap-8 mt-32 mx-32"
     >
       <li
         v-for="projet in projets"
         :key="projet.id"
-        class="cards-project"
+        class="cards-project col-span-4"
       >
         <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
           <img

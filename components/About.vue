@@ -1,7 +1,7 @@
 <template>
   <section
     id="aboutme"
-    class="container mx-auto relative pb-48"
+    class="container mx-auto relative pb-48 pt-32"
   >
     <div class="grid grid-cols-12 ">
       <h2 class="text-9xl text-right col-start-6 col-end-13 text-white">about me.</h2>

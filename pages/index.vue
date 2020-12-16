@@ -52,7 +52,7 @@ export default {
         alt=""
         srcset=""
       >
-      <section class="h-screen background-dark">
+      <section class="background-dark">
         <Blog />
       </section>
       <section class="background-dark">
