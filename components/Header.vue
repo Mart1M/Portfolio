@@ -1,5 +1,5 @@
 <template>
-  <header class="container mx-auto px-4 z-10 grid md:grid-cols-12 gap-2 text-white mt-6 sticky top-6">
+  <header class="container mx-auto z-10 grid md:grid-cols-12 gap-2 text-white mt-6 sticky top-6">
     <div class="col-start-1 col-span-2">
       <div class="background-blur rounded-full h-12 w-12 flex items-center justify-center">
         <a href="#body"><img

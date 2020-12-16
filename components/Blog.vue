@@ -1,10 +1,13 @@
 <template>
-  <div class='container mx-auto px-4 relative'>
-    <h2 class="text-9xl flex justify-center text-white">My works.</h2>
+  <div class='container mx-auto relative'>
+    <div class="grid grid-cols-12 ">
+      <h2 class="text-9xl col-start-1 col-end-12 text-white">my works.</h2>
+    </div>
+
     <div v-if="error">{{ error }}</div>
     <ul
       v-else
-      class="grid grid-cols-3 gap-10 mt-32"
+      class="grid grid-cols-3 gap-8 mt-32"
     >
       <li
         v-for="projet in projets"

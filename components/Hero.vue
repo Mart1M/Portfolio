@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto px-4 z-10">
+  <section class="container mx-auto z-10">
     <section class="pt-44 hero">
       <img
         class="relative"

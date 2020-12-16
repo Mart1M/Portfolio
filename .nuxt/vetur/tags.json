@@ -1,4 +1,10 @@
 {
+  "About": {
+    "description": "Auto imported from components/About.vue"
+  },
+  "LazyAbout": {
+    "description": "Auto imported from components/About.vue"
+  },
   "Blog": {
     "description": "Auto imported from components/Blog.vue"
   },
