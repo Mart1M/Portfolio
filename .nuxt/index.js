@@ -15,6 +15,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 import nuxt_plugin_plugin_be55acbe from 'nuxt_plugin_plugin_be55acbe' // Source: ./components/plugin.js (mode: 'all')
 import nuxt_plugin_templatesplugin4b2bbd2c_64b90796 from 'nuxt_plugin_templatesplugin4b2bbd2c_64b90796' // Source: ./templates.plugin.4b2bbd2c.js (mode: 'all')
 import nuxt_plugin_image_453efb32 from 'nuxt_plugin_image_453efb32' // Source: ./image.js (mode: 'all')
+import nuxt_plugin_apollomodule_1050a303 from 'nuxt_plugin_apollomodule_1050a303' // Source: ./apollo-module.js (mode: 'all')
 import nuxt_plugin_cookieuniversalnuxt_5ff44fdf from 'nuxt_plugin_cookieuniversalnuxt_5ff44fdf' // Source: ./cookie-universal-nuxt.js (mode: 'all')
 import nuxt_plugin_http_f07c1d8e from 'nuxt_plugin_http_f07c1d8e' // Source: ./http.js (mode: 'all')
 import nuxt_plugin_strapi_7e36c958 from 'nuxt_plugin_strapi_7e36c958' // Source: ./strapi.js (mode: 'all')
@@ -188,6 +189,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_image_453efb32 === 'function') {
     await nuxt_plugin_image_453efb32(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_apollomodule_1050a303 === 'function') {
+    await nuxt_plugin_apollomodule_1050a303(app.context, inject)
   }
 
   if (typeof nuxt_plugin_cookieuniversalnuxt_5ff44fdf === 'function') {

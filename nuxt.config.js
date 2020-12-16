@@ -1,4 +1,7 @@
 export default {
+    env: {
+        strapiBaseUri: process.env.API_URL || "http://localhost:1337"
+    },
     // Global page headers (https://go.nuxtjs.dev/config-head)
     head: {
         title: 'Martin Molcrette',
@@ -30,13 +33,20 @@ export default {
     ],
 
     // Modules (https://go.nuxtjs.dev/config-modules)
-    modules: ['@nuxtjs/strapi', '@nuxt/image', ['nuxt-fontawesome', {
+    modules: ['@nuxtjs/strapi', '@nuxtjs/apollo', '@nuxt/image', ['nuxt-fontawesome', {
         component: 'fa',
         imports: [{
             set: '@fortawesome/free-brands-svg-icons',
             icons: ['fab']
         }]
     }]],
+    apollo: {
+        clientConfigs: {
+            default: {
+                httpEndpoint: process.env.BACKEND_URL || "http://localhost:1337/graphql"
+            }
+        }
+    },
     image: {},
     strapi: {
         entities: ['projets', ],

@@ -169,7 +169,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {}
+      env: {"strapiBaseUri":"http://localhost:1337"}
     }
     // Only set once
     if (!process.static && context.req) {

@@ -1,0 +1,9 @@
+query Projets {
+  projets {
+    Titre
+    Tag
+    Image {
+      url
+    }
+  }
+}

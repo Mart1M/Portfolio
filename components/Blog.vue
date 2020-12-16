@@ -1,5 +1,37 @@
+<script>
+import axios from "axios";
+
+// axios
+//   .get("https://strapi-backend-mart1.herokuapp.com/projets")
+//   .then(response => {
+//     console.log(response);
+//   });
+
+export default {
+  name: "projects",
+  data() {
+    return {
+      projets: [],
+      error: null
+    };
+  },
+  async mounted() {
+    try {
+      const response = await axios.get(
+        "https://strapi-backend-mart1.herokuapp.com/projets"
+      );
+      this.projets = response.data;
+    } catch (error) {
+      this.error = error;
+    }
+  }
+};
+</script>
 <template>
-  <div class='container mx-auto relative'>
+  <div
+    class='container mx-auto relative'
+    id="myworks"
+  >
     <div class="grid grid-cols-12 ">
       <h2 class="text-9xl col-start-1 col-end-12 text-white">my works.</h2>
     </div>
@@ -38,32 +70,3 @@
   </div>
 </template>
 
-<script>
-import axios from "axios";
-
-// axios
-//   .get("https://strapi-backend-mart1.herokuapp.com/projets")
-//   .then(response => {
-//     console.log(response);
-//   });
-
-export default {
-  name: "projects",
-  data() {
-    return {
-      projets: [],
-      error: null
-    };
-  },
-  async mounted() {
-    try {
-      const response = await axios.get(
-        "https://strapi-backend-mart1.herokuapp.com/projets"
-      );
-      this.projets = response.data;
-    } catch (error) {
-      this.error = error;
-    }
-  }
-};
-</script>
