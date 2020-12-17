@@ -11,6 +11,12 @@
   "LazyBlog": {
     "description": "Auto imported from components/Blog.vue"
   },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/Footer.vue"
+  },
   "Header": {
     "description": "Auto imported from components/Header.vue"
   },

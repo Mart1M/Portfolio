@@ -52,12 +52,13 @@ export default {
         alt=""
         srcset=""
       >
-      <section class="background-dark">
+      <section class="background-dark blog">
         <Blog />
       </section>
-      <section class="background-dark">
+      <section class="background-dark about">
         <About />
       </section>
+      <Footer />
     </section>
   </div>
 

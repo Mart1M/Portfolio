@@ -68,6 +68,7 @@ h3,
     font-family: "Gramatika-Medium";
 }
 
+.main .blog,
 .main a {
     font-family: "Gramatika-Bold";
     border-color: #5743D8;
@@ -90,4 +91,8 @@ h3,
 
 footer {
     background-color: #130F30;
+}
+
+footer a {
+    color: white !important;
 }

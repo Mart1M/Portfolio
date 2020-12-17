@@ -49,7 +49,7 @@ export default {
         <div class="bg-white flex flex-col rounded-t-3xl rounded-b-2xl">
           <img
             v-if="projet.Image"
-            :src="projet.Image[0].formats.small.url"
+            :src="projet.Image[0].formats.medium.url"
             class="rounded-t-2xl"
             alt
             srcset
