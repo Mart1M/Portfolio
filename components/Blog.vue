@@ -18,7 +18,7 @@ export default {
   async mounted() {
     try {
       const response = await axios.get(
-        "https://20201216t214618-dot-strapi-298820.ew.r.appspot.com/projets?_sort=id:DESC"
+        "https://strapi-298820.ew.r.appspot.com/projets?_sort=id:DESC"
       );
       this.projets = response.data;
     } catch (error) {
